@@ -1,0 +1,147 @@
+body {
+    background-color: white;
+    display: block;
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    display: inline;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+hr {
+    color: black;
+}
+
+h1 {
+    font-size: 54px;
+}
+
+.nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 9%;
+    background-color: white;
+    border-bottom: 1px solid black;
+}
+
+.nav-bar li {
+    color: black;
+}
+
+.links {
+    float: right;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.socials {
+    float: left;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.main {
+    position: fixed;
+    top: 9%;
+    height: 91%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+.graph {
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+    position: fixed;
+    top: 15%;
+    left: 45%;
+    width: 53%;
+    height: 75%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.title {
+    text-align: left; 
+    display: grid;
+    place-content: center;   
+}
+
+.title h1, .title p {
+    padding-left: 10px;
+}
+
+.graph-element {
+    position: relative;
+    left: 15%;
+    width: 70%;
+    border: 1px solid black;
+    display: grid;
+    place-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: 0.3s ease;
+}
+
+.graph-element:hover{
+    transform: scaleX(1.3);
+}
+
+.graph:hover .graph-element:not(:hover) {
+    transform: scaleX(0.7); /* Scale down the other items */
+}
+
+#about-me {
+    background-color: #50858b;
+    top: 10%;
+    height: 90%;
+}
+
+#research {
+    background-color: #19257c;
+    top: 60%;
+    height: 40%;
+}
+
+#code {
+    background-color: #d9d9d9;
+    top: 40%;
+    height: 60%;
+}
+
+#blog {
+    background-color: #734b5e;
+    top: 30%;
+    height: 70%;
+}
+
+.about-me {
+    display: block;
+    height: 500px;
+    width: 100%;
+    position: fixed;
+    top: 100%;
+    left: 0%;
+}
